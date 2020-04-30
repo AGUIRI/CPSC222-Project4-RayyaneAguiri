@@ -29,7 +29,7 @@ const Navbar = (props) => {
     <div className="navbar">
         <ul className="navbarMenu">
             <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/about-us">About Us</NavLink></li>
+            <li><NavLink to="/about-us">About US</NavLink></li>
             <li><NavLink to="/contact-us">Contact Us</NavLink></li>
         </ul>
         <div className="search">

@@ -10,6 +10,9 @@ import {BrowserRouter as Router,Route} from 'react-router-dom';
 import ContactUS from './containers/ContactUS';
 import Post from './containers/Post';
 import AboutUS from './containers/AboutUS';
+import Form1 from './components/Form1';
+
+
 
 class App extends React.Component {
   constructor(props) {
@@ -89,6 +92,7 @@ class App extends React.Component {
   render() {
     const { locations } = this.state;
     return (
+      
       <React.Fragment>
         <Router>
         <div className="container">
@@ -160,11 +164,13 @@ class App extends React.Component {
         <div className="App">
           <Header />
           <Hero />
+          <Form1 />
 
           <Route path="/" exact component={Home} />
           <Route path="/contact-us"  component={ContactUS}/>
           <Route path="/post/:slug" component={Post} />
           <Route path="/about-us"  component={AboutUS}/>
+
           
         </div>
         </Router>
